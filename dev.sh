@@ -49,29 +49,23 @@ run_app() {
     "./$BUILD_DIR/$APP_NAME"
 }
 
-
 # -----------------------------
-# Interactive Menu
+# Single Menu Prompt
 # -----------------------------
 
-while true; do
-    clear
-    echo "====================="
-    echo "   ⚡ Zync Dev CLI    "
-    echo "====================="
-    echo "1) Run in Debug"
-    echo "2) Build Release"
-    echo "3) Exit"
-    echo
-    read -p "Select an option: " choice
+clear
+echo "====================="
+echo "   ⚡ Zync Dev CLI    "
+echo "====================="
+echo "1) Run in Debug"
+echo "2) Build Release"
+echo "3) Exit"
+echo
+read -p "Select an option: " choice
 
-    case "$choice" in
-        1) run_app ;;
-        2) build_release ;;
-        3) echo "Bye! 👋"; exit 0 ;;
-        *) echo "Invalid choice!"; sleep 1 ;;
-    esac
-
-    echo
-    read -p "Press Enter to return to menu..."
-done
+case "$choice" in
+    1) run_app ;;
+    2) build_release ;;
+    3) echo "Bye! 👋"; exit 0 ;;
+    *) echo "Invalid choice!" ;;
+esac
