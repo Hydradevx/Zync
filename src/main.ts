@@ -1,3 +1,3 @@
-import { logVersion } from "./core/logger"
+import { logStartup } from "./core/logger"
 
-logVersion();
+logStartup();

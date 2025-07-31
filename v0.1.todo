@@ -4,12 +4,12 @@
 - [-] Initialize Bun + TypeScript project
 - [-] Create project structure:
 - [-] Add dev.sh to run/build the app
-- [ ] Log Zync version + platform on startup
+- [-] Log Zync version + platform on startup
 
 ## 2. Core Components
 - [ ] Logger – minimal info, warn, error methods
 - [ ] Command Loader – auto-load commands from /commands
-- [ ] Import Manager – handles dynamic command imports and dependency loading
+- [ ] Import Manager – handles dynamic imports and dependency loading
 - [ ] Interactive CLI using prompt() for user input
 
 ## 3. Basic Commands
