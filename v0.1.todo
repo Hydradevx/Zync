@@ -7,7 +7,7 @@
 - [-] Log Zync version + platform on startup
 
 ## 2. Core Components
-- [ ] Logger – minimal info, warn, error methods
+- [-] Logger – minimal info, warn, error methods
 - [ ] Command Loader – auto-load commands from /commands
 - [ ] Import Manager – handles dynamic imports and dependency loading
 - [ ] Interactive CLI using prompt() for user input
@@ -15,7 +15,7 @@
 ## 3. Basic Commands
 - [ ] help – List all loaded commands with descriptions
 - [ ] version – Show current Zync version
-- [ ] ip <address> – Simulate IP lookup (real API in v0.2)
+- [ ] ip <address> – Simulate IP lookup
 
 ## 4. Build & Distribution
 - [ ] Bun single binary build (bun build --compile)
