@@ -1,0 +1,29 @@
+# ✅ Zync v0.1 TODO
+
+## 1. Core Setup
+- [-] Initialize Bun + TypeScript project
+- [-] Create project structure:
+- [-] Add dev.sh to run/build the app
+- [ ] Log Zync version + platform on startup
+
+## 2. Core Components
+- [ ] Logger – minimal info, warn, error methods
+- [ ] Command Loader – auto-load commands from /commands
+- [ ] Import Manager – handles dynamic command imports and dependency loading
+- [ ] Interactive CLI using prompt() for user input
+
+## 3. Basic Commands
+- [ ] help – List all loaded commands with descriptions
+- [ ] version – Show current Zync version
+- [ ] ip <address> – Simulate IP lookup (real API in v0.2)
+
+## 4. Build & Distribution
+- [ ] Bun single binary build (bun build --compile)
+- [ ] Output to dist/zync or dist/zync.exe
+- [ ] Test binary on Linux + Windows
+
+## 5. Polish & Checks
+- [ ] Display startup banner: ⚡ Zync v0.1 (Linux)
+- [ ] Handle unknown commands gracefully
+- [ ] Ensure all commands compile into the binary
+- [ ] Validate cross-platform run
