@@ -39,9 +39,8 @@ export function initLogger() {
     process.stdout.write(chalk.red(`[ERROR ${timestamp()}] `));
     console.log(msg, ...args);
   };
-  console.log = (msg?: any, ...args: any[]) => {
-    process.stdout.write(chalk.gray(`[LOG ${timestamp()}] `));
-    process.stdout.write(msg + "\n");
-    if (args.length) console.dir(args);
+  (console as any).success = (msg?: any, ...args: any[]) => {
+    process.stdout.write(chalk.green(`[OK ${timestamp()}] ✅ `));
+    console.log(msg, ...args);
   };
 }

@@ -1,16 +1,16 @@
 import { logStartup, initLogger } from "./core/logger";
+import { loadCommands } from "./core/commandLoader";
+import { showSplash } from "./core/ui";
+import { startCLI } from "./core/cli";
 import pkg from "../package.json" assert { type: "json" };
 
-const version = pkg.version;
-const platform =
-  Bun.platform === "darwin"
-    ? "macOS"
-    : Bun.platform === "win32"
-    ? "Windows"
-    : "Linux";
+const v = pkg.version;
+const p = Bun.platform === "darwin" ? "macOS" :
+          Bun.platform === "win32" ? "Windows" : "Linux";
 
-await logStartup(version, platform);
-
+await logStartup(v, p);
 initLogger();
 
-console.info("Zync is ready.");
+await loadCommands();
+showSplash(v, p);
+await startCLI();
